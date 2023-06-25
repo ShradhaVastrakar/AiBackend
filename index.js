@@ -11,6 +11,10 @@ dotenv.config()
 
 const app = express();
 
+app.get("/", (req,res) => {
+    res.send("Welcome to backend page of talentIQ")
+})
+
 
 app.use(bodyParser.json())
 app.use(cors());
